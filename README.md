@@ -1,5 +1,5 @@
 # JavaScript30
-30 Day Challenge (JS31)
+30 Day Challenge
 
  - [x] 1 - JavaScript Drum Kit
  - [x] 2 - Js and CSS Clock
