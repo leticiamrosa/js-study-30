@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Array Cardio Day 2</title>
+    
+        <style>
+        
+        </style>
+    </head>
+    <body>
+
+        <script>
+
+            const people = [
+                { name: 'Wes', year: 1988 },
+                { name: 'Kait', year: 1986 },
+                { name: 'Irv', year: 1970 },
+                { name: 'Lux', year: 2015 },
+            ];
+
+            const comments = [
+                { text: 'Love this!', id: 523423 },
+                { text: 'Super good', id: 823423 },
+                { text: 'You are the best', id: 148748 },
+                { text: 'Ramen is my fav food ever', id: 456814 },
+                { text: 'Nice Nice Nice', id: 434534 },
+            ];
+
+            // some and every checks
+            // Array.prototype.some() // is at least one person 19?
+
+            const isAdult = people.some(person => {
+                const currentYear = (new Date()).getFullYear();
+                return currentYear - person.year >= 19;
+            });
+
+            // Array.prototype.every() // is at least one person 19?
+            const allAdults = people.every(person => {
+                const currentYear = (new Date()).getFullYear();
+                return currentYear - person.year >= 19;
+            });
+
+            // console.log({allAdults});
+            
+            // Array.prototype.find()
+            const comment = comments.find(comment => comment.id === 523423);
+            console.log(comment)
+            
+            // Array.prototype.findIndex()
+
+            const index = comments.findIndex(index => comment.id === 523423);
+            console.log(index);
+
+            const newComments = [
+                ...comments.slice(0, index),
+                ...comments.slice(index + 1)
+            ]
+        </script>
+    </body>
+</html>
