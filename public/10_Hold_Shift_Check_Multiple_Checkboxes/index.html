@@ -1,0 +1,104 @@
+<!Doctype html>
+<html lang="pt-br">
+    <head>
+        <meta chartset="UTF-8">
+        <title>Hold Shift Check Multiple Checkboxes</title>
+
+        <style>
+            .inbox {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: coral;
+            }
+
+            .item {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+            }
+
+            p {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 24px;
+            }
+
+            input[type="checkbox" i] {
+                background-color: initial;
+                cursor: default;
+                margin: 10px 5ex;
+                padding: initial;
+                border: initial;
+                font: 500 24px system-ui;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="inbox">
+            <div class="item">
+                <input type="checkbox">
+                <p>Checkbox</p>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <p>Checkbox</p>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <p>Checkbox</p>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <p>Checkbox</p>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <p>Checkbox</p>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <p>Checkbox</p>
+            </div>
+            <div class="item">
+                <input type="checkbox">
+                <p>Checkbox</p>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+            const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+
+            let lastChecked;
+
+            function handlecheck(e) {
+                // check if they had the shift key down
+                // and check that they are checking it
+                
+                let inBetween = false;
+
+                if(e.shiftKey && this.checked) {
+                    checkboxes.forEach(checkbox => {
+                        console.log(checkbox);
+                        if(checkbox === this || checkbox === lastChecked ) {
+                            inBetween = !inBetween;
+                        }
+                        // check inBetween if ok, attr checked
+                        if(inBetween) {
+                            checkbox.checked = true;
+                        }
+                    })
+                }
+
+                lastChecked = this;
+            }
+
+            checkboxes.forEach(checkbox => checkbox.addEventListener('click', handlecheck));
+        </script>
+    </body>
+</html>
