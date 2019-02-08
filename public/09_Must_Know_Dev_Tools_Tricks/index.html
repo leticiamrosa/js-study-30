@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+    // Regular
+    // console.log('hello');
+
+    // Interpolated
+    const variable = 'designer'
+    // console.log(`Hello i am ${variable}`);
+
+    // Styled
+    console.log('%c style in dev tools', 'font-size: 50px');
+    console.log('%c style in dev tools', 'font-size: 50px; background-color: coral; color: white;');
+    console.log('%c style in dev tools', 'font-size: 50px; background-color: coral; color: white; text-shadow: 5px 5px 0 blue');
+
+    // warning!
+    console.warn('OHH noo!');
+
+    // Error :|
+    console.error('shit!');
+
+    // Info
+    console.info('Crocodiles eat 3-4 people per year');
+
+    // Testing
+    const p = document.querySelector('p');
+    console.assert(p.classList.contains('ouch'), 'that is wrong!');
+
+    // clearing
+    // console.clear();
+
+    // Viewing DOM Elements
+    console.log(p);
+    console.dir(p);
+
+    // Grouping together
+    dogs.forEach(dog => {
+        console.group(`${dog.name}`)
+        console.log(`this is the name ${dog.name}`);
+        console.log(`${dog.name} is ${dog.year} years old`)
+    })
+
+    // counting
+    // timing
+  </script>
+</body>
+</html>
