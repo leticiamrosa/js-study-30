@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Reference VS Copy</title>
+    </head>
+
+    <body>
+
+        <script>
+        // start with strings, numbers and booleans
+
+        //array
+        let players = ['tabada', 'bruna', 'leticia', 'dylan'];
+
+        // make a copy of it
+        const team = players;
+        
+        // however what happens when we update that array?
+        const team2 = players.slice();
+        team2[3] = 'larissa'
+
+        const team3 = [].concat(players);
+        team3[3] = 'batima';
+
+        // ES6 SPREAD
+        const team4 = [...players];
+        team4[3] = 'ana';
+        
+        const team5 = Array.from(players); // create a new array
+
+        // console.log('------------------------------------');
+        // console.log(players);
+        // console.log('------------------------------------');
+
+        // console.log('------------------------------------');
+        // console.log(team2);
+        // console.log('------------------------------------');
+
+        // console.log('------------------------------------');
+        // console.log(team3);
+        // console.log('------------------------------------');
+
+        // console.log('------------------------------------');
+        // console.log(team4);
+        // console.log('------------------------------------');
+
+        // console.log('------------------------------------');
+        // console.log(team5);
+        // console.log('------------------------------------');
+
+        // with obj
+        const person = {
+            name: 'leticia',
+            age: 27,
+        }
+        
+        // const captain = person;
+        // captain.number = 99;
+
+        // how do we take a copy instead?
+        const cap2 = Object.assign({}, person, {number: 99, age: 12});
+
+        // we will hopefully soon see the obj ...spread
+        const cap3 = {...person};
+
+        console.log('------------------------------------');
+        console.log(cap2);
+        console.log('------------------------------------');
+
+
+        const le = {
+            name: 'le',
+            age: 200,
+            social: {
+                twitter: '@lemonoob',
+                facebook: 'none'
+            }
+        }
+
+        // copy right
+        const dev = Object.assign({}, le);
+        const dev2 = JSON.parse(JSON.stringify(le));
+
+        console.log(dev);
+        console.log(dev2)
+
+        console.log('------------------------------------');
+        console.log(dev2.social);
+        console.log('------------------------------------');
+
+
+
+
+        </script>
+    </body>
+</html>
