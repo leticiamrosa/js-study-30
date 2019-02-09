@@ -7,15 +7,15 @@
  - [x] 4 - Array Cardio Day 1
  - [x] 5 - Flex Panel Gallery
  - [x] 6 - Type Ahead
- - [ ] 7 - Array Cardio Day 2
- - [ ] 8 - Fun with HTML5 Canvas
- - [ ] 9 - Dev Tools Domination
- - [ ] 10 - Hold Shift and Check Checkboxes
- - [ ] 11 - Custom Video Player
- - [ ] 12 - Key Sequence Detection
- - [ ] 13 - Slide in on Scroll
- - [ ] 14 - Javascript References VS Copying
- - [ ] 15 - LocalStorage
+ - [x] 7 - Array Cardio Day 2
+ - [x] 8 - Fun with HTML5 Canvas
+ - [x] 9 - Dev Tools Domination
+ - [x] 10 - Hold Shift and Check Checkboxes
+ - [x] 11 - Custom Video Player
+ - [x] 12 - Key Sequence Detection
+ - [x] 13 - Slide in on Scroll
+ - [x] 14 - Javascript References VS Copying
+ - [x] 15 - LocalStorage
  - [ ] 16 - Mouse Move Shadow
  - [ ] 17 - Sort Without Articles
  - [ ] 18 - Adding Up Times with Reduce
