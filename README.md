@@ -16,10 +16,10 @@
  - [x] 13 - Slide in on Scroll
  - [x] 14 - Javascript References VS Copying
  - [x] 15 - LocalStorage
- - [ ] 16 - Mouse Move Shadow
- - [ ] 17 - Sort Without Articles
- - [ ] 18 - Adding Up Times with Reduce
- - [ ] 19 - Webcam Fun
+ - [x] 16 - Mouse Move Shadow
+ - [x] 17 - Sort Without Articles
+ - [x] 18 - Adding Up Times with Reduce
+ - [x] 19 - Webcam Fun
  - [ ] 20 - Speech Detection
  - [ ] 21 - Geolocation
  - [ ] 22 - Follow Along Link Highlighter
