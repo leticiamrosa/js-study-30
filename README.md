@@ -20,9 +20,9 @@
  - [x] 17 - Sort Without Articles
  - [x] 18 - Adding Up Times with Reduce
  - [x] 19 - Webcam Fun
- - [ ] 20 - Speech Detection
- - [ ] 21 - Geolocation
- - [ ] 22 - Follow Along Link Highlighter
+ - [x] 20 - Speech Detection
+ - [x] 21 - Geolocation
+ - [x] 22 - Follow Along Link Highlighter
  - [ ] 23 - Speech Synthesis
  - [ ] 24 - Sticky Nav
  - [ ] 25 - Event Capture, Propagation, Bubbling and Once
