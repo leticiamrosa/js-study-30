@@ -25,9 +25,9 @@
  - [x] 22 - Follow Along Link Highlighter
  - [x] 23 - Speech Synthesis
  - [x] 24 - Sticky Nav
- - [ ] 25 - Event Capture, Propagation, Bubbling and Once
- - [ ] 26 - Stripe Follow Along Nav
- - [ ] 27 - Click and Drag
- - [ ] 28 - Video Speed Controller
- - [ ] 29 - Countdown Timer
- - [ ] 30 - Whack a Mole
+ - [x] 25 - Event Capture, Propagation, Bubbling and Once
+ - [x] 26 - Stripe Follow Along Nav
+ - [x] 27 - Click and Drag
+ - [x] 28 - Video Speed Controller
+ - [x] 29 - Countdown Timer
+ - [x] 30 - Whack a Mole
